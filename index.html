@@ -6,6 +6,12 @@
 
   <link rel="stylesheet" href="src/css/font-awesome.min.css">
   <style type="text/css">
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 98vh;
+    }
     .player-box {
       width: 800px;
       height: 600px;
@@ -37,26 +43,28 @@
   </style>
 </head>
 <body>
-  <div id="player" class="player-box">
-    <div class="js-video-container video"></div>
+  <div class="center-container">
+    <div id="player" class="player-box">
+      <div class="js-video-container video"></div>
 
-    <div class="instruments">
-      <button class="js-play-button button-like">
-        <i class="fa fa-play test" aria-hidden="true"></i>
-      </button>
-      <button class="js-pause-button button-like" hidden>
-        <i class="fa fa-pause test" aria-hidden="true"></i>
-      </button>
-      <button class="js-volume-button button-like">
-        <i class="fa fa-volume-off" aria-hidden="true"></i>
-      </button>
-      <button class="js-mute-button button-like" hidden>
-        <i class="fa fa-volume-up" aria-hidden="true"></i>
-      </button>
-      <div class="expand-spacer"></div>
-      <button class="js-fullscreen-button button-like">
-        <i class="fa fa-expand" aria-hidden="true"></i>
-      </button>
+      <div class="instruments">
+        <button class="js-play-button button-like">
+          <i class="fa fa-play test" aria-hidden="true"></i>
+        </button>
+        <button class="js-pause-button button-like" hidden>
+          <i class="fa fa-pause test" aria-hidden="true"></i>
+        </button>
+        <button class="js-volume-button button-like">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+        </button>
+        <button class="js-mute-button button-like" hidden>
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
+        <div class="expand-spacer"></div>
+        <button class="js-fullscreen-button button-like">
+          <i class="fa fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

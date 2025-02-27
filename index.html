@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
   <link rel="manifest" href="src/css/favicon/site.webmanifest">
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
   <style type="text/css">
     .center-container {
       display: flex;
@@ -42,7 +44,17 @@
       height: 35px;
       margin: 6px 2px 6px 0px;
     }
-    .expand-spacer {
+    .timer-block {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      align-items: center;
+    }
+    .timer {
+    }
+    .progress-bar {
       flex-grow: 1;
     }
   </style>
@@ -65,7 +77,11 @@
         <button class="js-mute-button button-like" hidden>
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
-        <div class="expand-spacer"></div>
+        <div class="timer-block">
+          <div class="timer"><span class="js-current-time"></span></div>
+          <div class="progress-bar"></div>
+          <div class="timer"><span class="js-duration"></span></div>
+        </div>
         <button class="js-fullscreen-button button-like">
           <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
